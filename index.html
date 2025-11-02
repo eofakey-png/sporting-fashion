@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sporting Fashion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sporting Fashion – Moda masculina com estilo, conforto e atitude. Vista-se bem em qualquer ocasião.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="styleheadto3d.css" rel="stylesheet">
+    <link href="styletendencias.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">
+            <img class="logof" src="logo.jpg" alt="Sporting Fashion" width="150" height="50">
+            Sporting Fashion
+        </a>
+         <nav class="nav1">
+            <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home-site" id="home">
+        <div class="video-container">
+            <video class="video-home" src="media.mp4" autoplay muted loop></video>
+            <div id="overlay-text" class="overlay-text">Blazer, <span class="texto" id="texto">na medida</span></div>
+            <!--IDEIA DE TROCAR NA MEDIDA COM OUTRAS PALAVRAS, "NA MODA, NA MORAL"-->
+            <button class="overlay-button">Veja a coleção</button>
+        </div>
+    </section>
+    <section id="perfums" class="perfums">
+        <model-viewer
+          class="asad3d"
+          src="https://huggingface.co/datasets/Weuus2/Models/resolve/main/asad-v1.glb"
+          alt="Meu modelo 3D"
+          auto-rotate
+          ar="none"
+          shadow-intensity="0"
+          disable-automatic-lighting
+          style="width: 40vw; height: 100%">
+        </model-viewer>
+            <!-- OBJETO 3D AQUI, PERFUME ASAD-->
+        <div class="texts-perfum">
+            <h2 class="title-perfum">
+                Asad
+            </h2>
+            <p class="text-perfum">
+                A essência da sofisticação em cada nota. Um perfume que envolve, conquista e deixa sua marca por onde você passa, revelando elegância e confiança em cada instante.
+            </p>
+            <button class="cta-button">Confira</button>
+        </div>
+    </section>
+    <section class="tendencias" id="tendencias">
+        <!-- CARROSSEL AQUI, COM BLAZERS, CALÇAS ALFAIATARIA, ÓCULOS -->
+        <h2 class="title-tendencias">
+            Tendências
+        </h2>
+        <div class="carrossel">
+            <div class="slides slide-1">
+                <img class="image-carrossel" src="blazer.png" alt="Blazer elegante">
+                <h2 class="c-carrossel title-carrossel">Blazer</h2>
+                <p class="c-carrossel texto-carrossel">Confira nossa<br>coleção<br>de blazers!</p>
+                <button class="cta-button c-carrossel b-carrossel">Clique</button>
+            </div>
+            <div class="slides slide-2">
+                <img class="image-carrossel" src="blazer.png" alt="Blazer elegante">
+            </div>
+            <div class="slides slide-3">
+                <img class="image-carrossel" src="blazer.png" alt="Blazer elegante">
+            </div>
+            <div class="slides slide-4">
+                <img class="image-carrossel" src="blazer.png" alt="Blazer elegante">
+            </div>
+        </div>
+    </section>
+    <section id="sobre">
+        <h2 class="sobre-title">Sobre</h2>
+        <p class="sobre-text">Alex Oliveira, empreendedor visionário, dedica-se a transformar o universo da moda masculina, inspirando homens a descobrirem seu estilo único. Cada peça de sua loja é pensada para expressar elegância, confiança e sofisticação, elevando o cotidiano a momentos de autenticidade e distinção. Com olhar atento às tendências e ao bom gosto, Alex cria experiências que vão além do vestuário, revelando a verdadeira essência de quem as veste.</p>
+        <button class="ig-button">Instagram</button>
+    </section>
+    <footer>
+        <p>&copy; 2025 Sporting Fashion, Fazoru. Todos os direitos reservados.</p>
+        <p>Contato: contato@sportingfashion.com | +55 31 99999-9999</p>
+    </footer>
+    <script src="textscript.js"></script>
+</body>
+</html>
