@@ -174,12 +174,14 @@ nav ul {
 }
 .cta-button{
     background: #f5deb3;
+    color: black;
     width: 60%;
     border-radius: 0.5vw;
     outline: none;
     border: none;
     font-family: "montserrat", sans-serif;
     font-size: 3vw;
+    -webkit-tap-highlight-color: transparent;
 }
 .texto{
     white-space: nowrap;
