@@ -188,15 +188,15 @@ nav ul {
 }
 @keyframes brilho {
     0% {
-        filter: brightness(0.5);
+        -webkit-filter: brightness(0.5);
     }
     41.66% { /* 5s de aumento em 12s total */
-        filter: brightness(1.2);
+        -webkit-filter: brightness(1.2);
     }
     58.33% { /* 2s de pausa */
-        filter: brightness(1.2);
+        -webkit-filter: brightness(1.2);
     }
     100% { /* 5s de redução */
-        filter: brightness(0.5);
+        -webkit-filter: brightness(0.5);
     }
 }
